@@ -39,6 +39,7 @@
     if (self.topViewVerticalSpace.constant + viewSize.height * 2 >= botViewVerticalSpaceConstant) {
         self.topViewVerticalSpace.constant = botViewVerticalSpaceConstant - viewSize.height * 2;
     }
+    
     self.botViewVerticalSpace.constant = botViewVerticalSpaceConstant;
     self.topViewVerticalSpace.constant = arc4random_uniform(self.botViewVerticalSpace.constant - viewSize.height * 2);
 }
